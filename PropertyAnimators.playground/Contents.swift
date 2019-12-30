@@ -64,7 +64,7 @@ extension AnimationViewController {
  ### Basic Animation
 
  Using begin/commit based animation was discouraged in iOS 4.
- It has never been deprecated.
+ Formally deprecated since iOS 13.0
  */
     func beginCommitAnimation(withDuration duration: TimeInterval, delay: TimeInterval) {
         UIView.beginAnimations(nil, context: nil)
@@ -75,7 +75,7 @@ extension AnimationViewController {
     }
 
 /*:
- Block based API - now also discouraged
+ Block based API - now also discouraged - but not yet deprecated.
  */
     func blockAnimation(withDuration duration: TimeInterval) {
         UIView.animate(withDuration: duration) {
